@@ -6,21 +6,20 @@
 <body>
 <div id="flipbook">
 	<div class="hard"> Turn.js </div>
-	<div class="hard"></div>
-	<div> Page 1 </div>
-	<div> Page 2 </div>
-	<div> Page 3 </div>
-	<div> Page 4 </div>
-	<div class="hard"></div>
-	<div class="hard"></div>
+	
+	<div style="background-color: red"> Page 1 </div>
+	<div style="background-color: blue"> Page 2 </div>
+	<div style="background-color: yellow"> Page 3 </div>
+	<div style="background-color: green"> Page 4 </div>
+	
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="turn.js"></script>
 <script type="text/javascript">
 	$("#flipbook").turn({
-		width: 400,
-		height: 300,
+		width: 1000,
+		height: 1100,
 		autoCenter: true
 	});
 </script>
