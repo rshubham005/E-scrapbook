@@ -8,31 +8,53 @@
 			margin:0;
 			box-sizing: border-box;
 		}
+		.album
+		{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			
+		}
+		
 	</style>
 </head>
 <body>
-<div id="flipbook">
+	<div class="album">
+		
+<div id="flipbook" class="flipbook">
 	<div class="hard" style="background-image: url(c2.png); background-size: contain;"> Turn.js </div>
 	
-	<div style="background-image: url(c1.png); background-size: contain;"> Page 1 </div>
-	<div style="background-image: url(c3.png); background-size: contain;"> Page 2 </div>
-	<div style="background-image: url(c4.png); background-size: contain;"> Page 3 </div>
-	<div style="background-image: url(c3.png); background-size: contain;"> Page 4 </div>
-	<div style="background-image: url(c1.png); background-size: contain;"> end </div>
+	<div style="background-image: url(c1.png); background-size: contain; background-position: center;"> Page 1 </div>
+	<div style="background-image: url(c3.png); background-size: contain; background-position: center;"> Page 2 </div>
+	<div style="background-image: url(c4.png); background-size: contain; background-position: center;"> Page 3 </div>
+	<div style="background-image: url(c3.png); background-size: contain; background-position: center;"> Page 4 </div>
+	<div style="background-image: url(c1.png); background-size: contain; background-position: center;"> end </div>
 	
 </div>
 
+	</div>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="turn.js"></script>
 
 <script type="text/javascript">
-	$("#flipbook").turn({
-		width: "auto",
-		height: 1775,
+	if (screen.width>=756) {
+		$("#flipbook").turn({
+		width: 700,
+		height: 620,
 		autoCenter: true,
-		display:"single",
-		duration:1000,
+		// display:"single",
 	});
+	}
+	else if (screen.width<=500)
+	{
+		$("#flipbook").turn({
+		width: 1100,
+		height: 2000,
+		display:"single",
+		autoCenter: true,
+		
+	});
+	}
 </script>
 
 </body>
