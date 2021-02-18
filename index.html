@@ -11,7 +11,7 @@
 		.album
 		{
 			height: 100vh;
-			background-color: black;
+			background-color: red;
 			display: flex;
 			justify-content: center;
 			
@@ -21,26 +21,15 @@
 </head>
 <body>
 	<div class="album">
-		//front page
+		
 <div id="flipbook" class="flipbook">
-	<div class="hard" style="background-image: url(c5.png); background-size: cover; background-repeat: no-repeat;"> Turn.js </div>
-	//page one
-	<div style="background-color: yellow; text-align: center;">
-		<img src="f1.png" style="width: 60%; transform: rotate(-15deg); padding-left: -15px; margin-top:10%; box-shadow: 5px 5px 10px 5px black ">
-		<p style="margin: 10% 10%; color: red; font-size: 20px; font-weight: 900; text-align: left; transform: rotate(-15deg); border: 2px dashed black ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-	</div>
-	//page two
-	<div style="background-color: blue; text-align: center;">
-		<img src="f1.png" style="width: 60%; transform: rotate(15deg); padding-left: -15px; margin-top:10%; box-shadow: 5px 5px 10px 5px black ">
-		<p style="margin: 10% 10%; color: red; font-size: 20px; font-weight: 900; text-align: left; transform: rotate(15deg); border: 2px dashed black ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-	</div>
-	//page three
-	<div style="background-image: url(c3.png); background-size: cover; background-repeat: no-repeat; background-position: center;"> Page 2 </div>
-	<div style="background-image: url(c4.png);background-size: cover; background-repeat: no-repeat; background-position: center;"> Page 3 </div>
-	<div style="background-image: url(c3.png); background-size: cover; background-repeat: no-repeat; background-position: center;"> Page 4 </div>
-	<div style="background-image: url(c1.png); background-size: cover; background-repeat: no-repeat; background-position: center;"> end </div>
+	<div class="hard" style="background-image: url(c2.png); background-size: contain;"> Turn.js </div>
+	
+	<div style="background-image: url(c1.png); background-size: contain; background-position: center;"> Page 1 </div>
+	<div style="background-image: url(c3.png); background-size: contain; background-position: center;"> Page 2 </div>
+	<div style="background-image: url(c4.png); background-size: contain; background-position: center;"> Page 3 </div>
+	<div style="background-image: url(c3.png); background-size: contain; background-position: center;"> Page 4 </div>
+	<div style="background-image: url(c1.png); background-size: contain; background-position: center;"> end </div>
 	
 </div>
 
@@ -51,16 +40,16 @@
 <script type="text/javascript">
 	if (screen.width>=756) {
 		$("#flipbook").turn({
-		width: 880,
+		width: 700,
 		height: 620,
 		autoCenter: true,
 		// display:"single",
 	});
 	}
-	else if (screen.width<=700)
+	else if (screen.width<=500)
 	{
 		$("#flipbook").turn({
-		width: 1500,
+		width: 1100,
 		height: 2000,
 		display:"single",
 		autoCenter: true,
