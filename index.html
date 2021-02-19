@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>scrap book</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 	<style type="text/css">
 		*{
 			padding: 0;
@@ -16,7 +18,76 @@
 			justify-content: center;
 			
 		}
-		
+		.page1
+		{
+			background-color: yellow;
+			text-align: center;
+		}
+		.page2
+		{
+			background-color: pink;
+			text-align: center;
+		}
+		.page3
+		{
+			background-color: blue;
+			text-align: center;
+		}
+		.page4
+		{
+			background-color: black;
+			text-align: center;
+		}
+		.page5
+		{
+			background-color: #00FFFF.;
+			text-align: center;
+		}
+		.page6
+		{
+			background-color: gray;
+			text-align: center;
+		}
+		.image1
+		{
+			margin-top: 10%;
+			width: 75%;
+			border-radius: 15px;
+			transform: rotate(-15deg);
+		}
+		.image2
+		{
+			margin-top: 10%;
+			width: 75%;
+			border-radius: 15px;
+			transform: rotate(15deg);
+		}
+		.text1
+		{
+			color: green;
+			font-family: 'Reggae One', cursive;
+			font-weight: 700;
+			transform: rotate(-15deg);
+			margin: 15% 20px;
+			padding: 0px 15px;
+			border-left: 5px solid red ;
+			border-right: 5px solid red ;
+			border-radius: 15px;
+			font-size: 15px;
+		}
+		.text2
+		{
+			color: red;
+			font-family: 'Reggae One', cursive;
+			font-weight: 700;
+			transform: rotate(15deg);
+			margin: 15% 20px;
+			padding: 0px 15px;
+			border-left: 5px solid red ;
+			border-right: 5px solid red ;
+			border-radius: 15px;
+			font-size: 15px;
+		}
 	</style>
 </head>
 <body>
@@ -25,8 +96,30 @@
 <div id="flipbook" class="flipbook">
 	<div class="hard" style="background-image: url(c6.png); background-size: cover;"> Turn.js </div>
 	
-	<div style="background-image: url(c1.png); background-size: cover; background-position: center;"> Page 1 </div>
-	<div style="background-image: url(c3.png); background-size: cover; background-position: center;"> Page 2 </div>
+	<div class="page1">
+		<img src="f1.png" class="image1">
+		<p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</div>
+	<div class="page2"> 
+		<img src="f1.png" class="image2">
+		<p class="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	 </div>
+	 <div class="page3">
+		<img src="f1.png" class="image1">
+		<p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</div>
+	<div class="page4"> 
+		<img src="f1.png" class="image2">
+		<p class="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	 </div>
+	 <div class="page5">
+		<img src="f1.png" class="image1">
+		<p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</div>
+	<div class="page6"> 
+		<img src="f1.png" class="image2">
+		<p class="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	 </div>
 	<div style="background-image: url(c4.png); background-size: cover; background-position: center;"> Page 3 </div>
 	<div style="background-image: url(c3.png); background-size: cover; background-position: center;"> Page 4 </div>
 	<div style="background-image: url(c1.png); background-size: cover; background-position: center;"> end </div>
